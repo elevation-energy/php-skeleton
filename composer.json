@@ -1,11 +1,7 @@
 {
-    "name": "Elevation/:package_name",
+    "name": "elevation-energy/:package_name",
     "description": ":package_description",
-    "keywords": [
-        "Elevation",
-        ":package_name"
-    ],
-    "homepage": "https://github.com/Elevation/:package_name",
+    "homepage": "https://github.com/elevation-energy/:package_name",
     "license": "proprietary",
     "authors": [
         {

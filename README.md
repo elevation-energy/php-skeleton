@@ -1,5 +1,4 @@
 # Very short description of the package
-
 <p align="center">
     <a href="https://circleci.com/gh/elevation-energy/:package_name">
         <img src="https://circleci.com/gh/elevation-energy/:package_name.svg?style=svg&circle-token=1c12bb1825205d3d843037cd2ae47e3061b055e5" alt="Build Status" />
@@ -12,32 +11,34 @@
 This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
 
 ## Installation
-
-You can install the package via composer:
-
-```bash
-composer require elevation-energy/:package_name
+Add the git repo url to composer.json and require the package
+```
+    "repositories": [
+        {
+            "url": "https://github.com/elevation-energy/:package_name",
+            "type": "git"
+        }
+    ],
+    "require": {
+        "elevation-energy/:package_name": "dev-master"
+    }
 ```
 
 ## Usage
-
 ``` php
 $skeleton = new Elevation\Skeleton();
 echo $skeleton->echoPhrase('Hello, Elevation!');
 ```
 
 ### Testing
-
 ``` bash
 composer test
 ```
 
 ### Changelog
-
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
 ## Credits
-
 - [:author_name](https://github.com/:author_username)
 - [All Contributors](../../contributors)
 
