@@ -1,0 +1,53 @@
+{
+    "name": "Elevation/:package_name",
+    "description": ":package_description",
+    "keywords": [
+        "Elevation",
+        ":package_name"
+    ],
+    "homepage": "https://github.com/Elevation/:package_name",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": ":author_name",
+            "email": ":author_email"
+        }
+    ],
+    "require": {
+        "php": "^7.2.17"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.3",
+        "phpunit/phpunit": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elevation\\Skeleton\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Elevation\\Skeleton\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "coverage": "./vendor/bin/phpunit --coverage-html build/coverage"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "7.2.17"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Elevation\\Skeleton\\SkeletonServiceProvider"
+            ],
+            "aliases": {
+                "Skeleton": "Elevation\\Skeleton\\SkeletonFacade"
+            }
+        }
+    }
+}
