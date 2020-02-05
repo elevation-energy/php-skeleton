@@ -1,9 +1,14 @@
-# Very short description of the package
+# Package Name
 <p align="center">
     <a href="https://circleci.com/gh/elevation-energy/:package_name">
         <img src="https://circleci.com/gh/elevation-energy/:package_name.svg?style=svg&circle-token=1c12bb1825205d3d843037cd2ae47e3061b055e5" alt="Build Status" />
     </a>
-    <a href="https://codeclimate.com/repos/5d8116a4a9d6045c2f00fef6/maintainability"><img src="https://api.codeclimate.com/v1/badges/ada4e05936f6ca61f8c0/maintainability" /></a>
+    <a href="https://codeclimate.com/repos/this-project-id/maintainability">
+        <img src="https://api.codeclimate.com/v1/badges/ada4e05936f6ca61f8c0/maintainability" />
+    </a>
+    <a href="https://codeclimate.com/repos/this-project-id/test_coverage">
+        <img src="https://api.codeclimate.com/v1/badges/c74f4414e95171cedda3/test_coverage" />
+    </a>
 </p>
 
 **Note:** Replace ```:author_name``` ```:author_username``` ```:author_email``` ```:package_name``` ```:package_description``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
@@ -23,6 +28,9 @@ Add the git repo url to composer.json and require the package
         "elevation-energy/:package_name": "dev-master"
     }
 ```
+
+## Purposes of This Repository
+How does this package integrate with our other packages on a higher level than code? Why does it exist?
 
 ## Usage
 ``` php
